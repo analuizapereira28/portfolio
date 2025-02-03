@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Ana Luiza</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="assets/js/action.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="titulo">Portfólio Ana Luiza</h1>
+            <p>16 anos - Estudante de TI no SENAI</p>
+        </div>
+   
+        <img src="assets/img/flor.jpg" alt="Imagem de fundo do cabeçalho" class="imagem-fundo-cabecalho">
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-container">
+                <div class="foto-perfil">
+                    <img src="assets/img/perfil.png" alt="Foto de Ana Luiza">
+                </div>
+                <p>Oi! Meu nome é Ana Luiza, tenho 16 anos, moro em Birigui-SP, e estou cursando Desenvolvimento De Sistemas no Senai. E completando o ensino Médio no Sesi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projeto">
+                <h3>Projeto 1: Site Veterinário DogDodói</h3>
+                <p>O objetivo era criar um site de veterinário utilizando HTML, CSS.</p>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 2: Site Fotógrafo</h3>
+                <p>O objetivo era criar um site de fotógrafo utilizando HTML, CSS e JavaScript.</p>
+            </div>
+            <div class="projeto">
+                <h3>Projeto 3: Banco de Dados</h3>
+                <p>O objetivo era criar um banco de dados no Dbeaver para armazenar informações</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>E-mail: <strong>analu2028@outlook.com</strong></p>
+            <p>Telefone: <strong>(18) 99658-9367</strong></p>
+            <p>Instagram: <strong>@analuizap</strong></p>
+
+            <div class="questionario">
+                <h3>Questionário de Contato</h3>
+                <form id="form-contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="contato">Contato (E-mail ou Telefone):</label>
+                    <input type="text" id="contato" name="contato" required>
+
+                    <label for="assunto">Assunto desejado:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <button type="button" id="btnEnviar">Enviar</button>
+                </form>
+
+                <div id="resultado-contato"></div> 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ana Luiza </p>
+        </div>
+    </footer>
+</body>
+</html>

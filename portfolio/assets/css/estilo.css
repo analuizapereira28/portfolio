@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbe1f5; 
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-grow: 1;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Animação suave na cor */
+}
+
+header h1:hover {
+    color: #ff1f7c; /* Cor ao passar o mouse */
+}
+
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 80px 0; 
+    color: #ff1f7c;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.imagem-fundo-cabecalho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; 
+    z-index: -1; 
+}
+
+section {
+    margin-bottom: 40px; 
+}
+
+section h2 {
+    color: #ff1f7c; 
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px; 
+}
+
+.sobre-container {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.foto-perfil img {
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border: 5px solid #ff4c9f; 
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #ff4c9f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+#sobre, #projetos, #contato {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 40px; 
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; 
+    width: 70%; 
+}
+
+
+.project-item {
+    width: 48%; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    color: #ff4c9f;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.questionario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; 
+    position: center;
+    margin-top: 10px; 
+    margin-left: 300px;  
+}
+
+.questionario h3 {
+    text-align: center;
+    color: #ff4c9f;
+}
+
+.questionario label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.questionario input, .questionario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.questionario button {
+    background-color: #ff4c9f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.questionario button:hover {
+    background-color: #e63e85;
+}
+
+
+#resultado-contato {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fbe1f5;
+    border-radius: 5px;
+    display: none;
+}
+
+#resultado-contato {
+    font-size: 16px;
+    color: #ff4c9f;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff0f6; 
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #sobre, #projetos, #contato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .questionario {
+        width: 100%;  
+        margin-left: 0;  
+        margin-right: 0; 
+        margin-top: 20px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 40px 0; 
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .questionario {
+        width: 100%;  
+        margin-top: 20px;  
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
+}
